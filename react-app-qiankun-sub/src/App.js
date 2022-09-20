@@ -9,6 +9,7 @@ import LibVersion from './components/LibVersion';
 import HelloModal from './components/HelloModal';
 
 import Home from './pages/Home';
+import Profile from './pages/Profile';
 // import About from './pages/About';
 const About = lazy(() => import('./pages/About'));
 
@@ -19,11 +20,14 @@ const RouteExample = () => {
         <NavLink exact to="/" className='app-mian-link' activeClassName='app-mian-link-active'>Home</NavLink>
         <Divider type="vertical" />
         <NavLink exact to="/about" className='app-mian-link' activeClassName='app-mian-link-active'>About</NavLink>
+        <Divider type="vertical" />
+        <NavLink exact to="/profile" className='app-mian-link' activeClassName='app-mian-link-active'>Profile</NavLink>
       </nav>
       <Suspense fallback={null}>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/profile" exact component={Profile} />
         </Switch>
       </Suspense>
     </Router>
