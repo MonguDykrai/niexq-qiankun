@@ -1,0 +1,6 @@
+{
+    "packages": ["server", "react-app-qiankun-main", "react-app-qiankun-sub", "vue-cli-qiankun-sub"],
+    "version": "0.0.0",
+    "npmClient": "npm"
+  }
+  
