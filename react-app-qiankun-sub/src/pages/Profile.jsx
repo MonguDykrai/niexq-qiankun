@@ -8,7 +8,8 @@ const Profile = () => {
 		fetch("http://localhost:5000/user/1", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        console.log(result)
+        // console.log(result)
+        console.log(`%c${JSON.stringify(result)}`, "background: purple; color: #fff;");
       })
       .catch((error) => console.log("error", error));
 	}, []);

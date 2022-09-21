@@ -9,9 +9,9 @@ import LibVersion from './components/LibVersion';
 import HelloModal from './components/HelloModal';
 
 import Home from './pages/Home';
-import Profile from './pages/Profile';
 // import About from './pages/About';
 const About = lazy(() => import('./pages/About'));
+const Profile = lazy(() => import('./pages/Profile'));
 
 const RouteExample = () => {
   return (
